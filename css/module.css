@@ -1,0 +1,107 @@
+/*  module.css  05/17/2016  jhm  */
+
+/********************* Base Styles **********************/
+
+html, body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 22px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ffebcc; /* light reddish brown */
+  color: #4d3900; /* dark brown */
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-family: Garamond, "Times New Roman", Times, serif;
+  color: #e60000; /* medium red */
+  font-size: 1.75rem;
+  text-align: center;
+  padding-top: 25px;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+div {
+  float: left;
+  padding: 15px;
+  margin-left: 3%;
+  margin-right: 0%;
+  margin: 25px 0 10px 3%;
+}
+.menuItem {
+  background-color: #ffdd80; /* light brown */
+  border: 3px solid #4d3900; /* dark brown */
+  position: relative;
+  /* font-size: 100%; */
+}
+h2.menuLabel {
+  color: #e60000; /* light red */
+  font-size: 125%;
+  text-align: center;
+  border-bottom: 3px #4d3900 solid; /* dark brown */
+  border-left: 3px #4d3900 solid;   /* dark brown */
+  width: 130px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+div.menuItem > p {
+  padding-top: 30px;
+}
+.yellow {
+  background-color: #ffff00;
+}
+.blue {
+  background-color: #ccccff;
+}
+.green {
+  background-color: #00ff55;
+}
+footer {
+  clear: left;
+}
+p#foot {
+  color: #808080; /* dimgray */
+  font-size: 0.7rem;
+  font-style: italic;
+  text-align: center;
+}
+
+/* ==================================================== */
+/* =================== Device Sizes =================== */
+/* ==================================================== */
+
+/******************** Larger Devices **** (desktop) *****/
+@media (min-width: 992px) {
+  div {
+    width: 29.2%;
+    min-width: 300px;
+  }
+}
+
+/******************** Medium Devices ***** (tablet) *****/
+@media (min-width: 768px) and (max-width: 991px) {
+  div#menuItemOne, div#menuItemTwo {
+    width: 45.6%;
+    min-width: 325px;
+  }
+  div#menuItemThree {
+    width: 94.2%;
+    min-width: 540px;
+    /* font-size: 1rem; */
+  }
+}
+
+/******************* Smaller Devices ***** (mobile) *****/
+@media (max-width: 767px) {
+  div {
+    width: 94%;
+    min-width: 270px;
+  }
+}
