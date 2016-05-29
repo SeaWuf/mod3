@@ -26,20 +26,21 @@ body {
   font-family: Impact, Charcoal, sans-serif;
   font-weight: bold;
   text-shadow: 0 0 4px #000;
-  color: #e60000;
+  color: #e60000;                      /* blood red */
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
 #nav-btn {
-  background-color: #ffaf70;
+  background-color: #ffaf70;           /* ??? */
 }
 #nav-btn:hover, #nav-btn:active {
-  background-color: #ff8b33;
+  background-color: #ff6f00;           /* dark tan */
 }
 #nav-list {
   margin-top: 0;
   margin-bottom: 0;
+  background-color: #ffd9b3;           /* very light tan */
 }
 #nav-list li {
   font-size: 1.2em;
@@ -48,11 +49,10 @@ body {
   text-align: center;
 }
 #nav-list a {
-  color: #0000b3;
-  /* text-align: center; */
+  color: #0000b3;                      /* dark blue */
 }
 #nav-list a:hover {
-  background-color: white;
+  background-color: #ff6f00;           /* dark tan */
 }
 #collapsable-nav a {                   /* Collapsed nav menu text */
   font-size: 1.2em;
@@ -62,7 +62,6 @@ body {
 
 #menu-bucket {
   border: none;
-  background-color: none;
   margin-bottom: 30px;
 }
 #menu-bucket a {
@@ -76,7 +75,6 @@ body {
 
 #main-bucket {
   border: none;
-  background-color: none;
   width: 100%;
 }
 #menu-title {
@@ -104,13 +102,22 @@ h3 {
   font-size: 1.6em;
   font-family: Impact, Charcoal, sans-serif;
   font-weight: bold;
-  /* text-align: center; */
+ }
+.pTopper {
+  margin: 0 auto;
+  /* margin-bottom: 0; */
+
+}
+.pTopper a {
+  color: #000;
+  font-size: .9em;
+  text-decoration: none;
 }
 
 /* === Special Class to Force the 3rd Item Wider Than The Others === */
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .go-wide {
+  .stretch-it {
     width: 100%;
   }
 }
