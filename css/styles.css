@@ -3,17 +3,23 @@
 body {
   font-family: serif;
   font-size: 16px;
-  background-color: #e6e6ff; /* pale pale blue */
-  color: #0000b3; /* darkish blue */
-  min-width: 375px;
-}
-.container, .jumbotron {
-  border: 3px solid #4d4dff; /* dark blue */
+  background-color: #e6e6ff;           /* pale pale blue */
+  color: #0000b3;                      /* darkish blue */
 }
 
-/* === Nav Bucket === */
+/* === Header === */
 
-h1.nav-shoutout {
+#nav-bucket {
+  background-color: #ffcc99;           /* lighter tan than menu items */
+  box-shadow: 0 0 25px #0000b3;        /* med blue */
+  border-radius: 0;
+  border: 3px solid #4d4dff;           /* dark blue */
+  margin-bottom: 30px;
+}
+#nav-container {
+  border: none;
+}
+.nav-shoutout {
   font-size: 2.2em;
   margin: 0 30px;
   line-height: 0;
@@ -22,28 +28,58 @@ h1.nav-shoutout {
   text-shadow: 0 0 4px #000;
   color: #e60000;
 }
-div#nav-bucket {
-  background-color: #ccccff; /* lightblue */
-  box-shadow: 0 0 25px #0000b3; /* med blue */
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-btn {
+  background-color: #ffaf70;
+}
+#nav-btn:hover, #nav-btn:active {
+  background-color: #ff8b33;
+}
+#nav-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#nav-list li {
+  font-size: 1.2em;
+  font-family: Impact, Charcoal, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+#nav-list a {
+  color: #0000b3;
+  /* text-align: center; */
+}
+#nav-list a:hover {
+  background-color: white;
+}
+#collapsable-nav a {                   /* Collapsed nav menu text */
+  font-size: 1.2em;
 }
 
 /* === Menu Bucket === */
 
-div#menu-bucket {
+#menu-bucket {
   border: none;
   background-color: none;
-  width: 35%;
   margin-bottom: 30px;
+}
+#menu-bucket a {
+  box-shadow: 0 0 5px #0000b3;         /* med blue */
+}
+.navbar-brand {
+  padding-top: 25px;
 }
 
 /* === Main Bucket === */
 
-div#main-bucket {
+#main-bucket {
   border: none;
   background-color: none;
   width: 100%;
 }
-h2#menu-title {
+#menu-title {
   position: relative;
   bottom: 30px;
   font-size: 2em;
@@ -58,22 +94,21 @@ h2#menu-title {
   border: 3px solid #4d4dff;
   overflow: hidden;
   width: 100%;
-  padding: 2px 20px;
+  padding: 0 20px 10px;
   margin: 0 auto 15px;
-  background-color: #ffbf80; /* tan */
-  box-shadow: 0 0 25px #0000b3; /* med blue */
+  background-color: #ffbf80;           /* tan */
+  box-shadow: 0 0 25px #0000b3;        /* med blue */
   border-radius: 8px;
 }
 h3 {
-  /* position: absolute; */
-  /* top: 0; */
   font-size: 1.6em;
   font-family: Impact, Charcoal, sans-serif;
   font-weight: bold;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* === Special Class to Force the 3rd Item Wider Than The Others === */
+
 @media (min-width: 768px) and (max-width: 991px) {
   .go-wide {
     width: 100%;
